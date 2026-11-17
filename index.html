@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafa Pérez · Full Stack Developer + IA</title>
+  <meta name="description" content="Portfolio de Rafa Pérez, estudiante de Full Stack Development e Inteligencia Artificial.">
+  <meta name="theme-color" content="#0b1020">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#inicio" class="logo">rafa<span>.dev</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Cambiar tema">🌙</button>
+        <button class="icon-btn menu-btn" id="menu-btn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="badge">🎓 Estudiante en formación · Disponible para prácticas</span>
+          <h1>Hola, soy <span class="gradient">Rafa Pérez</span></h1>
+          <h2 class="role">Full Stack Developer + IA<span class="cursor">|</span></h2>
+          <p class="lead">Construyo aplicaciones web de principio a fin y las hago más inteligentes con inteligencia artificial. Aprendiendo cada día, creando cada semana.</p>
+          <div class="hero-buttons">
+            <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contacto" class="btn btn-ghost">Contactar</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+            <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.4l-5.8-7.58-6.63 7.58H.49l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.5h2.04L6.48 3.24H4.3l13.31 17.41z"/></svg></a>
+            <a href="mailto:rafa.perez@example.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M2 4h20a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zm10 8.2L3.6 6H3v.6l9 6.6 9-6.6V6h-.6L12 12.2z"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <div class="code-window">
+            <div class="dots"><i></i><i></i><i></i></div>
+<pre><code><span class="c">// perfil.js</span>
+<span class="k">const</span> rafa = {
+  rol: <span class="s">"Full Stack + IA"</span>,
+  estado: <span class="s">"Aprendiendo"</span>,
+  stack: [<span class="s">"React"</span>, <span class="s">"Node"</span>,
+          <span class="s">"Python"</span>, <span class="s">"LLMs"</span>],
+  cafe: <span class="k">true</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Desarrollo Web</span><b>✦</b><span>APIs y Backend</span><b>✦</b><span>Integración de IA</span><b>✦</b><span>Chatbots y RAG</span><b>✦</b>
+        <span>Desarrollo Web</span><b>✦</b><span>APIs y Backend</span><b>✦</b><span>Integración de IA</span><b>✦</b><span>Chatbots y RAG</span><b>✦</b>
+      </div>
+    </div>
+
+    <section class="section" id="sobre-mi">
+      <div class="container">
+        <h2 class="section-title reveal">Sobre mí</h2>
+        <div class="about reveal">
+          <div class="about-text">
+            <p>Soy <strong>Rafa Pérez</strong>, estudiante en formación apasionado por el desarrollo de software y la inteligencia artificial. Disfruto convirtiendo ideas en productos reales: desde la interfaz que ve el usuario hasta la API y el modelo que hay detrás.</p>
+            <p>Actualmente me formo como Full Stack Developer y exploro cómo integrar LLMs, embeddings y automatización en aplicaciones web. Busco mi primera oportunidad profesional para seguir creciendo en un equipo.</p>
+            <ul class="facts">
+              <li>📍 España</li>
+              <li>🎓 Formación en desarrollo web e IA</li>
+              <li>🌱 Aprendizaje continuo y proyectos propios</li>
+              <li>🗣️ Español nativo · Inglés B2</li>
+            </ul>
+          </div>
+          <div class="stats">
+            <div class="stat"><b data-count="12">0</b><span>Proyectos personales</span></div>
+            <div class="stat"><b data-count="15">0</b><span>Tecnologías</span></div>
+            <div class="stat"><b data-count="500">0</b><span>Commits y subiendo</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="tecnologias">
+      <div class="container">
+        <h2 class="section-title reveal">Tecnologías</h2>
+        <p class="section-sub reveal">Mi stack para construir productos completos con inteligencia artificial.</p>
+        <div class="tech-grid">
+          <article class="tech-card reveal">
+            <h3>🎨 Frontend</h3>
+            <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>Tailwind CSS</span></div>
+          </article>
+          <article class="tech-card reveal">
+            <h3>⚙️ Backend</h3>
+            <div class="tags"><span>Node.js</span><span>Express</span><span>Python</span><span>FastAPI</span><span>REST APIs</span><span>Autenticación JWT</span></div>
+          </article>
+          <article class="tech-card reveal">
+            <h3>🗄️ Bases de datos</h3>
+            <div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Supabase</span><span>Redis</span></div>
+          </article>
+          <article class="tech-card reveal">
+            <h3>🤖 Inteligencia Artificial</h3>
+            <div class="tags"><span>OpenAI API</span><span>Gemini API</span><span>LangChain</span><span>RAG</span><span>Embeddings</span><span>Prompt Engineering</span><span>scikit-learn</span><span>PyTorch (básico)</span></div>
+          </article>
+          <article class="tech-card reveal">
+            <h3>🚀 DevOps y herramientas</h3>
+            <div class="tags"><span>Git</span><span>GitHub</span><span>Docker</span><span>Cloudflare</span><span>CI/CD</span><span>Linux</span><span>VS Code</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="container">
+        <h2 class="section-title reveal">Proyectos y servicios</h2>
+        <p class="section-sub reveal">Proyectos de aprendizaje y lo que puedo ofrecerte.</p>
+        <div class="filters reveal" id="filters">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="ia">IA</button>
+        </div>
+        <div class="projects">
+          <article class="project reveal" data-cat="ia">
+            <div class="project-img p1">🤖</div>
+            <div class="project-body">
+              <h3>Chatbot con RAG</h3>
+              <p>Asistente que responde sobre documentos PDF usando embeddings y una base vectorial.</p>
+              <div class="tags"><span>Python</span><span>LangChain</span><span>Supabase</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Demo</a><a href="#" target="_blank" rel="noopener">Código</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="web">
+            <div class="project-img p2">📋</div>
+            <div class="project-body">
+              <h3>Gestor de tareas Full Stack</h3>
+              <p>App con login, CRUD y panel de estadísticas. API REST y base de datos relacional.</p>
+              <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Demo</a><a href="#" target="_blank" rel="noopener">Código</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="ia">
+            <div class="project-img p3">🧠</div>
+            <div class="project-body">
+              <h3>Clasificador de sentimientos</h3>
+              <p>Modelo que analiza reseñas y muestra los resultados en un dashboard interactivo.</p>
+              <div class="tags"><span>Python</span><span>scikit-learn</span><span>FastAPI</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Demo</a><a href="#" target="_blank" rel="noopener">Código</a></div>
+            </div>
+          </article>
+          <article class="project reveal" data-cat="web">
+            <div class="project-img p4">🛒</div>
+            <div class="project-body">
+              <h3>Tienda online con IA</h3>
+              <p>E-commerce con recomendaciones de productos y asistente de compra con IA.</p>
+              <div class="tags"><span>Next.js</span><span>Tailwind</span><span>OpenAI</span></div>
+              <div class="links"><a href="#" target="_blank" rel="noopener">Demo</a><a href="#" target="_blank" rel="noopener">Código</a></div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="subhead reveal">¿En qué puedo ayudarte?</h3>
+        <div class="services">
+          <div class="service reveal"><span>💻</span><h4>Webs y aplicaciones</h4><p>Sitios responsive, rápidos y bien estructurados.</p></div>
+          <div class="service reveal"><span>🔌</span><h4>APIs y backend</h4><p>Servicios REST seguros conectados a bases de datos.</p></div>
+          <div class="service reveal"><span>✨</span><h4>Integración de IA</h4><p>Chatbots, automatizaciones y búsqueda semántica.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="formacion">
+      <div class="container">
+        <h2 class="section-title reveal">Formación y objetivos</h2>
+        <div class="timeline">
+          <div class="t-item reveal"><i></i><h4>Ahora</h4><p>Formación Full Stack y proyectos con IA generativa.</p></div>
+          <div class="t-item reveal"><i></i><h4>Próximo paso</h4><p>Prácticas en un equipo de desarrollo.</p></div>
+          <div class="t-item reveal"><i></i><h4>Meta</h4><p>Desarrollar productos con IA que resuelvan problemas reales.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contacto">
+      <div class="container contact">
+        <h2 class="section-title reveal">Hablemos</h2>
+        <p class="section-sub reveal">¿Tienes una idea, una oferta de prácticas o quieres colaborar? Escríbeme.</p>
+        <form class="form reveal" id="contact-form" novalidate>
+          <div class="field"><label for="name">Nombre</label><input id="name" name="name" type="text" required><small></small></div>
+          <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required><small></small></div>
+          <div class="field"><label for="message">Mensaje</label><textarea id="message" name="message" rows="5" required></textarea><small></small></div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rafa Pérez · Perfil ficticio con fines demostrativos</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
